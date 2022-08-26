@@ -1,0 +1,17 @@
+1. Crie um programa que lê um número inteiro, maior que 0, e imprime a soma entre todos os números menores que o número lido, até chegar em 0. Exemplo: usuário informa o numero 10 -> 9 + 8 + 7 + ... + 1
+
+2. Crie um programa para ler 5 idades, calcular a média entre as idades e informar a média ao usuário.
+
+3. Crie um programa que lê dois números inteiros e imprime todos os números pares entre eles. Assuma que o segundo número é maior que o primeiro.
+
+4. Crie um programa que lê dois números inteiros e imprimir todos os números ímpares entre eles. Suponha que o segundo número é maior que o primeiro.
+
+5. Ler um número inteiro e escrever o valor da soma de todos os números digitados até o momento, até que seja digitado um número negativo.
+
+6. Ler 5 números inteiros informados pelo usuário, e ao final mostrar a soma desses números. a. Complementar o exercício 6 informando, ao final, se a soma representa um número par ou ímpar.
+
+7. Dado um número inteiro positivo, determine se ele é ou não um número primo OBS: Um número primo é aquele que só é divisível por 1 e por ele próprio. Ex.: 7 -> 7/7 = 1; 7/1 = 7
+
+8. Faça a tabuada de multiplicação (1 a 10) de um número inteiro fornecido pelo usuário.
+
+9. Crie um programa que lê um número maior que zero e imprime o dobro de todos os números entre 0 e o número lido.

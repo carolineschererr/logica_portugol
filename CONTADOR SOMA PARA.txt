@@ -1,0 +1,15 @@
+algoritmo "ContadorPara"
+
+var
+N, C, S : Inteiro
+
+inicio
+S <- 0
+	Para C <- 1 ate 5 passo 1 faca
+	EscrevaL("Digite um valor: ")
+	Leia(N)
+	S <- S + N
+	EscrevaL("A soma dos valores é ",S)
+	FimPara
+
+fimalgoritmo

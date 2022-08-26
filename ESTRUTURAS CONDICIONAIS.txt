@@ -1,0 +1,59 @@
+ESTRUTURA CONDICIONAL
+
+Toda condição precisa ser uma expressão lógica, expressável em "verdadeiro" ou "falso".
+
+ESTRUTURA SE
+
+se <condição> entao
+	<ações a serem realizadas se a condição for verdadeira>
+fimse
+
+
+se <condição> entao
+	<ações>
+senao
+	<ações>
+fimse
+
+
+
+ESCOLHA...CASO
+
+escolha <expressão_de_seleção>
+
+caso <exp1>,<exp2>,...,<expn>
+	<lista-de-comandos-1>
+caso <exp1>,<exp2>,...,<expn>
+	<lista-de-comandos-1>
+outrocaso
+	<lista-de-comandos-3>
+fimescolha
+
+
+Exemplo
+
+algoritmo "classificacaodeatletas"
+
+var
+nome, categoria: caractere
+idade: inteiro
+
+inicio
+	Escreva("Nome do atleta: ")
+	Leia (nome)
+	Escreva("Idade do atleta: ")
+	Leia(idade)
+
+Escolha idade
+	caso 5,6,7,8,9,10
+	categoria <- "Infantil"
+	caso 1,12,13,14,15
+	categoria <- "Juvenil"
+	caso 16,17,18,19,20
+	categoria <- "Junior"
+	caso 21,22,24,24,25
+	categoria <- "Inválido"
+FimEscolha
+	Escreva("A categoria do atleta é",categoria)
+
+fimalgoritmo

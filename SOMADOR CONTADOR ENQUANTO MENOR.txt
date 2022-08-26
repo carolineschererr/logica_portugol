@@ -1,0 +1,23 @@
+algoritmo "Conta10Soma"
+
+var
+contador, N, S, maior: Inteiro
+
+
+inicio
+
+contador <- 1
+S <- 0
+menor <- 10
+Enquanto (contador <= 10) faca
+	Escreva ("Digite um valor de 1 a 10: ")
+	Leia(N)
+	Se (N < menor) entao
+	menor <- N
+	FimSe
+	S <- S + N
+	contador <- contador +1
+FimEnquanto
+	EscrevaL("A soma de todos os valores foi ",S)
+	EscrevaL("O menor valor digitado foi ",menor)
+algoritmo

@@ -1,0 +1,42 @@
+CRITÉRIOS DE DIVISIBILIDADE
+
+
+DIVISIBILIDADE POR 2
+
+Número é divisível por 2 se for par.
+
+DIVISIBILIDADE POR 3
+
+Número é divisível por 3 se soma dos algarismos for divisível por 3.
+
+DIVISIBILIDADE POR 4
+
+É divisível por 4 quando os dois últimos algarismos formam número divisível por 4.
+
+DIVISIBILIDADE POR 6
+
+É divisível por 6 se for divisível por 2 e por 3.
+
+DIVISIBILIDADE POR 7
+
+Resto da divisão por 7, considerando número de 3 em 3 algarismos. Resultado da soma sucedida da subtração de todos valores /7 deve ser número inteiro (inclui 0). Se for, é divisível por 7.
+
+DIVISIBILIDADE POR 8
+
+É divisível por 8 se os 3 últimos números também forem divisíveis por 8.
+
+DIVISIBILIDADE POR 9
+
+É divisível por 9 quando a soma dos algarismos resultar em 9.
+
+DIVISIBILIDADE POR 10
+
+É divisível por 10 se algarismo das unidades for 0.
+
+DIVISIBILIDADE POR 11
+
+Se soma dos números alternados 2x separadas e subtraídos um do outro for divisível por 11 (resultar em número inteiro), é divisível por 11.
+
+DIVISIBILIDADE POR 12
+
+Se número for divisível por 3 e por 4, é divisível por 12.

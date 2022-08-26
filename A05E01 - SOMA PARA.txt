@@ -1,0 +1,26 @@
+1. Crie um programa que lê um número inteiro, maior que 0, e imprime a soma entre todos os números menores que o número lido, até chegar em 0. Exemplo: usuário informa o numero 10 -> 9 + 8 + 7 + ... + 1
+
+
+algoritmo "Somador"
+//Autora: Caroline Scherer
+//Data: 03/10/2019
+
+var
+
+N, C, S: Inteiro // variáveis número, contador e soma
+
+inicio
+
+Escreva("Informe um número inteiro positivo: ") //restringe na entrada os números que podem ser dados pelo usuário
+Leia(N)
+C <- N
+S <- 0
+
+Para C de N ate 0 passo -1 faca
+	Escreva(C)
+	S <- S + C
+FimPara
+
+	EscrevaL("A soma dos números é",S,".")
+
+fimalgoritmo

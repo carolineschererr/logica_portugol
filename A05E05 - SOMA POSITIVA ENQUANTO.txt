@@ -1,0 +1,25 @@
+5. Ler um número inteiro e escrever o valor da soma de todos os números digitados até o momento, até que seja digitado um número negativo.
+
+
+
+algoritmo "SomaPositiva"
+//Função: soma todos números informados pelo usuário até que um número negativo seja informado.
+//Autora: Caroline Scherer
+//Data: 03/10/2019
+
+var
+
+N, C, S: Inteiro
+
+
+inicio
+
+S <- 0
+Enquanto (N >= 0) faca
+	Escreva("Informe um número: ")
+	Leia(N)
+	S <- S + N
+	Escreval("A soma dos números é",S,".")
+FimEnquanto
+
+fimalgoritmo

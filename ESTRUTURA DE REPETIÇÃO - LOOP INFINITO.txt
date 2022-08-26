@@ -1,0 +1,219 @@
+ESTRUTURA DE REPETIÇÃO
+
+repita...ate, enquanto...faca, para...faca.
+
+repita
+	<lista de comandos>
+ate <expressão lógica ou relacional>
+
+
+algoritmo "DemonstraRepeticao"
+
+var
+i: inteiro
+
+inicio
+i <- 1 //a inicialização da variável contadora deve acontecer aqui, fora do laço
+repita
+	Escreva(i)
+	i <- i+1
+ate i > 10 //controla o número de repetições do laço
+fimalgoritmo
+
+
+
+algoritmo "MediaHarmonica"
+//Função: algoritmo que lê os nomes dos alunos de uma turma de três alunos e as notas de suas três provas; programa calcula e exibe média harmônica das provas de cada aluno.
+
+var
+a,b,c,MH,i: real
+nome: caractere
+
+inicio
+i <- 1
+Repita
+	Escreva("Informe o nome do aluno: ")
+	Leia(nome)
+	Escreva("Informe as notas das três provas.")
+	Escreva("Primeira nota: ")
+	Leia(a)
+	Escreva("Segunda nota: ")
+	Leia(b)
+	Escreva("Terceira nota: ")
+	Leia(c)
+	MH <- 3/(1/a +1/b +1/c)
+	EscrevaL("A média harmônica do aluno",nome," é", MH,".")
+	i <- i+1
+Ate i > 3
+
+fimalgoritmo
+
+
+
+algoritmo "DecrementoPares10"
+
+var
+i: inteiro
+
+inicio
+i <- 10 //variável de controle
+Repita
+	Escreva(i)
+	i <- i-2 //retomada da variável de controle (decréscimo)
+Ate i=0 //teste lógico; condição de parada
+fimalgoritmo
+
+
+
+
+algoritmo "laçoInfinito"
+
+var
+contador: numerico
+
+inicio
+repita
+contador <- 1 //inicialização da variável de controle dentro do laço. Leva ao loop infinito. Precisa estar antes do laço. Loop ocorre porque variável de inicialização sempre volta a ser 1 neste caso.
+contador <- contador +1
+ate contador = 10
+fimalgoritmo
+
+
+
+
+algoritmo "laçoInfinito"
+
+var
+soma: numerico
+
+inicio
+Soma <- 1 //aqui a variável até é inicializada antes do laço de repetição, mas inicia em 1. Iniciando em 1, a soma nunca vai ser 10, porque se passa de valores ímpares em ímpares (1,3,5,7,9,11,...). A variável deve ser inicializada em 0 para corresponder ao teste do final.
+repita
+	Soma <- Soma +2 //retoma a variável de controle e dá o incremento (+2)
+ate Soma=10 //condição de finalização
+Escreva(Soma) 
+fimalgoritmo
+
+
+
+algoritmo "Menu"
+//Função: mostra como é feito um menu de cadastro de clientes que compara as opções após o usuário informar.
+var
+opcao: inteiro //note que a variável é numérica, pois no final do laço de repetição o limite é número (ate opcao=5)
+
+inicio
+repita
+	EscrevaL("Cadastro de clientes")
+	EscrevaL("1-Incluir")
+	EscrevaL("2-Alterar")
+	EscrevaL("3-Consultar")
+	EscrevaL("4-Excluir")
+	EscrevaL("5-Sair")
+	leia(opcao)
+ate opcao=5
+fimalgoritmo
+
+
+
+COMANDO ENQUANTO...FACA
+
+enquanto <expressão lógica ou relacional> faca
+	<lista de comandos>
+fimenquanto
+
+
+A diferença em relação ao "repita...ate" é a posição em que é testada a expressão. Na estrutura "repita...ate", a condição é avaliada após a execução dos comandos, o que garante que os comandos serão executados ao menos uma vez. Na estrutura "enquanto...faca", a expressão é avaliada no início e se o resultado for falso no primeiro teste, a lsita de comandos não é executada nenhuma vez. 
+
+Essa diferença faz com que em determindas situações o uso de uma estrutura seja mais vantajoso que o uso da outra.
+
+
+algoritmo "RaizQuadradaEnquanto"
+//Função: algoritmo que lê diversos números positivos e escreve, para cada um, sua raiz quadrada.
+var
+i: numerico
+
+inicio
+leia (i) // lê o número fora do laço
+enquanto i >=0 faca // testa a condição
+	escreva (i^0.5) //processamento. apenas após o teste
+	leia (i) //lê o número novamente
+fimenquanto
+fimalgoritmo
+
+
+
+algoritmo "RaizQuadradaRepita"
+
+var
+i: numerico
+
+inicio
+repita
+	leia (i) //lê o número dentro do laço
+	se i >=0 entao //testa uma condição antes do retorno
+	escreva (i^0.5) //retorno
+	fimse
+ate i<0 //teste no final do laço
+
+fimalgoritmo
+
+
+COMANDO PARA...FACA
+
+Também permite descrição de uma estrutura de repetição.
+
+É a estrutura de repetição mais completa, pois incorpora inicialização, incremento e teste de valor final da variável de controle. É utilizada em situações em que sabe-se previamente o número de repetições a serem feitas. O número de repetições pode ser uma constante ou estar em uma variável.
+
+para <variável de controle> de <valor inicial> ate <valor final> [passo <incremento>] faca
+	<lista de comandos>
+fimpara
+
+
+algoritmo "Impares1a1000"
+/Função: lê e escreve os números ímpares de 1 a 1000.
+
+var
+i: inteiro
+
+inicio
+
+para i de 1 ate 1000 passo 2 faca //incrementa i que inicia em 1 de 2 em 2
+	Escreva(i)
+fimpara
+
+fimalgoritmo
+
+
+
+
+algoritmo "Positivos"
+//Função: lê 5 números do usuário e imprime se o número for positivo.
+
+var
+i, numero: inteiro //i: controla o número de repetições. numero: recebe o número do usuário.
+
+inicio
+para i de 1 ate 5 passo 1 faca
+	EscrevaL("Digite um número: ")
+	Leia(numero)
+	se numero > 0 entao
+	escreva(numero)
+	fimse
+fimpara
+
+fimalgoritmo
+
+
+
+algoritmo "TamanhoDoLaço"
+//Função: informa o tamanho do laço em ordem crescente +1.
+
+var
+i,N: inteiro
+
+inicio
+leia(N) // Como é lido apenas um número, a leitura deve ser feita fora da estrutura de repetição.
+	para i de 1 ate N faca // não há sintaxe "passo 1" pois este é está implícito (é o padrão).
+	escreva(i)
+	fimpara
+fimalgoritmo

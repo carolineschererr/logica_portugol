@@ -1,0 +1,27 @@
+algoritmo "NumerosImpares"
+//Função: Imprime números ímpares do intervalo fornecido pelo usuário.
+//Autora: Caroline Scherer
+//Data: 03/20/2019
+
+var
+
+N1, N2, C: Inteiro
+
+inicio
+
+EscrevaL("Informe um número inteiro: ")
+Leia(N1)
+EscrevaL("Informe um número inteiro maior que o anterior: ")
+Leia (N2)
+C <- N2
+
+Se (C%2=0) entao
+	Para C de N2 ate N1 passo -2 faca
+	Escreva(C)
+Senao
+	Para C de N2 ate N1 passo -2 faca
+	Escreva(C)
+FimPara
+FimSe
+
+fimalgoritmo

@@ -1,0 +1,28 @@
+1) Sequência de Fibonacci. Exibir os 15 primeiros valores da série.
+
+
+2) Analisador de 5 valores. Exibir soma dos valores, média entre valores, quantos são divisíveis por 5, quantos são nulos, soma dos pares.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

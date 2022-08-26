@@ -1,0 +1,23 @@
+algoritmo "ParOuImparProcedimento"
+//Função: verifica se o número é par ou ímpar.
+//Autora: Caroline Scherer
+//Data: 04/10/2019
+
+var
+N : Inteiro
+Procedimento ParOuImpar(V: Inteiro)
+
+inicio
+	Se (V%2 = 0) entao
+	EscrevaL("O número ",V," é par.")
+	senao
+	EscrevaL("O número ",V," é ímpar.")
+	FimSe
+FimProcedimento
+
+inicio
+	Escreva("Digite um numero: ")
+	Leia(N)
+	ParOuImpar(N)
+
+fimalgoritmo
